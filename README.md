@@ -20,4 +20,4 @@ To view the website, simply visit [https://nisdoninfoway.com](https://nisdoninfo
 
 ## Contact
 
-For any inquiries, please reach out to us at info@nisdoninfoway.com.
+For any inquiries, please reach out to us at ho@nisdoninfoway.com.
