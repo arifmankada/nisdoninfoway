@@ -5,97 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nisdon Infoway</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
-        .header { background: #004282; color: #fff; padding: 10px 20px; text-align: center; }
-        .section { padding: 20px; margin-top: 10px; }
-        .section:nth-child(even) { background: #f4f4f4; }
-        .section h2 { color: #004282; }
-        .products { margin: 0; padding: 0; }
-        .products li { margin: 5px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #002B5C;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            max-height: 60px;
+            border-radius: 10px; /* Add rounded edges */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005792;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #004080;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #005792;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        nav ul ul li {
+            width: 200px;
+        }
+        nav ul ul li a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul ul li a:hover {
+            background-color: #004080;
+        }
+        .banner {
+            background-image: url('computer.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-title {
+            color: #002B5C;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #002B5C;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Welcome to Nisdon Infoway</h1>
-        <p>Your one-stop shop for all your technological needs!</p>
-    </div>
-
-    <div class="section">
-        <h2>Security Solutions</h2>
-        <ul class="products">
-            <li>CCTV Cameras</li>
-            <li>POS Machines</li>
-            <li>UPS</li>
-            <li>Biometric Devices</li>
-            <li>Digital/PBX Contact Center Solutions, IVR, Voice Logger, PRI Cards, IP Phone</li>
+    <header>
+        <div class="logo">
+            <img src="LOGO.png" alt="Nisdon Infoway Logo">
+        </div>
+        <h1>Nisdon Infoway</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li>
+                <a href="#products">Products</a>
+                <ul>
+                    <li><a href="#cpu">Processor/CPU</a></li>
+                    <li><a href="#motherboard">Motherboard</a></li>
+                    <li><a href="#memory">Memory/RAM</a></li>
+                    <li><a href="#graphics">Graphics Cards</a></li>
+                    <li><a href="#psu">Power Supply Units</a></li>
+                    <li><a href="#cooling">Fans/Cooling</a></li>
+                    <li><a href="#storage">Storage</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
+    </nav>
+    <div class="banner">
+        Experience our exceptional services with a smile. Join our satisfied customers today!
     </div>
-
-    <div class="section">
-        <h2>Video Conference Solutions</h2>
-        <ul class="products">
-            <li>PTZ Camera & Ceiling Mic</li>
-            <li>Quadro with EX</li>
-            <li>Commercial Displays</li>
-            <li>Android VC</li>
-            <li>DSP</li>
-            <li>Mini VC</li>
-        </ul>
+    <div class="container">
+        <div class="section" id="about">
+            <div class="section-title">About Us</div>
+            <div class="section-content">
+                <p>Welcome to Nisdon Infoway, your one-stop solution for all your computer and IT needs. We have been in the business for over 24 years, providing top-notch services and products to our valued customers.</p>
+            </div>
+        </div>
+        <div class="section" id="services">
+            <div class="section-title">Our Services</div>
+            <div class="section-content">
+                <p>We offer a wide range of services including computer repairs, IT support, network setup, and more. Our team of experts is always ready to assist you with any technical issues.</p>
+            </div>
+        </div>
+        <div class="section" id="products">
+            <div class="section-title">Our Products</div>
+            <div class="section-content">
+                <p id="cpu"><strong>Processor/CPU:</strong> Discover a variety of processors from leading brands like Intel and AMD, perfect for all your computing needs, from everyday tasks to high-performance gaming and professional workloads.</p>
+                <p id="motherboard"><strong>Motherboard:</strong> Explore our range of motherboards that support the latest technologies and provide a solid foundation for building your custom PC.</p>
+                <p id="memory"><strong>Memory/RAM:</strong> Upgrade your system with high-quality RAM to ensure smooth multitasking and fast data processing. We offer options from 4GB to 128GB to suit every need.</p>
+                <p id="graphics"><strong>Graphics Cards:</strong> Enhance your visual experience with our selection of graphics cards, whether you're into gaming, graphic design, or video editing. We carry the latest models from NVIDIA and AMD.</p>
+                <p id="psu"><strong>Power Supply Units:</strong> Ensure your PC has a reliable power source with our range of power supply units, designed to provide stable and efficient power to all your components.</p>
+                <p id="cooling"><strong>Fans/Cooling:</strong> Keep your system cool with our cooling solutions, including case fans, CPU coolers, and liquid cooling systems, to prevent overheating and maintain peak performance.</p>
+                <p id="storage"><strong>Storage:</strong> Find the perfect storage solution for your needs, from high-speed SSDs for quick boot times to large-capacity HDDs for storing all your important files and data.</p>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="section-title">Contact Us</div>
+            <div class="section-content">
+                <p>Feel free to reach out to us for any inquiries or support. You can contact us via phone, email, or visit our office.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="section">
-        <h2>Projector Accessories</h2>
-        <ul class="products">
-            <li>Trolley Stand</li>
-            <li>Lamp/Cables</li>
-            <li>Mount Kit</li>
-            <li>Screen</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Educational Technology Products</h2>
-        <ul class="products">
-            <li>Desktops</li>
-            <li>Laptops</li>
-            <li>Interactive Panels</li>
-            <li>Interactive Boards</li>
-            <li>Video Walls</li>
-            <li>Photo Scanners</li>
-            <li>Ink Tank Printers</li>
-            <li>iPads & Tabs</li>
-            <li>Teaching Tablets</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Office Automation Products</h2>
-        <ul class="products">
-            <li>ID Card Printers</li>
-            <li>Document Scanners</li>
-            <li>Bill Printers</li>
-            <li>Photo Copiers</li>
-            <li>Label/Barcode Printers</li>
-            <li>A3 InkTank MFD Printers</li>
-            <li>Amplifiers & Speakers</li>
-            <li>Digital Kiosks/Digital Signage</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Industrial Automation Equipments</h2>
-        <ul class="products">
-            <li>Water Purifiers</li>
-            <li>Boom Barriers</li>
-            <li>Metal Detectors</li>
-            <li>Solar Panels</li>
-            <li>Automatic Door Access</li>
-            <li>Automatic Gates</li>
-        </ul>
-    </div>
-
-    <footer class="header">
-        <p>Contact Us: info@nisdoninfoway.com</p>
+    <footer>
+        &copy; 2024 Nisdon Infoway. All rights reserved.
     </footer>
 </body>
 </html>
